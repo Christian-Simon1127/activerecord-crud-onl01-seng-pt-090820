@@ -23,7 +23,11 @@ def can_be_created_with_a_hash_of_attributes
   movie = Movie.create(attributes)
 end
 
+<<<<<<< HEAD
 def can_be_created_in_a_block(args = {title: "Home Alone", release_date: 1990})
+=======
+def can_be_created_in_a_block(args = {name: "Home Alone", release_date: 1990})
+>>>>>>> ade2c7454f4f5d5ecf14bec8692327e466edf328
   # If no arguments are passed, use default values:
   # title == "Home Alone"
   # release_date == 1990
@@ -44,7 +48,11 @@ def can_get_the_last_item_in_the_database
 end
 
 def can_get_size_of_the_database
+<<<<<<< HEAD
   Movie.count
+=======
+  Movie.size
+>>>>>>> ade2c7454f4f5d5ecf14bec8692327e466edf328
 end
 
 def can_find_the_first_item_from_the_database_using_id
@@ -69,7 +77,11 @@ def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick", save it, then return it
   Movie.create(title: "Awesome Flick")
   movie = Movie.find_by(title: "Awesome Flick")
+<<<<<<< HEAD
   movie.update(title: "Even Awesomer Flick")
+=======
+  movie.update(title: "Awesomer Flick")
+>>>>>>> ade2c7454f4f5d5ecf14bec8692327e466edf328
   movie.save 
   movie
 end
@@ -77,8 +89,13 @@ end
 def can_update_using_update_method
   # Update movie title to "Wat, huh?"
   Movie.create(title: "Wat?")
+<<<<<<< HEAD
   movie = Movie.find_by(title: "Wat?")
   movie.update(title: "Wat, huh?")
+=======
+  movie = Mpvie.find_by(title: "Wat?")
+  movie.update
+>>>>>>> ade2c7454f4f5d5ecf14bec8692327e466edf328
 end
 
 def can_update_multiple_items_at_once
